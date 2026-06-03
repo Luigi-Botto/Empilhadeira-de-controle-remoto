@@ -109,8 +109,3 @@ Os dois LEDs de sinalização frontal (conectados às GPIOs 27 e 28) operam sob 
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-1. **Validação da Alimentação:** Antes de conectar as saídas às portas digitais do Pico, verifique com um multímetro se a saída do módulo Step-Down LM2596 está ajustada estritamente para **5V** para não danificar o microcontrolador.
-2. **Gravação do Firmware:** Abra a IDE Thonny, carregue o arquivo de código fonte, selecione o interpretador correto para o Raspberry Pi Pico e armazene o script diretamente na memória interna do dispositivo.
-3. **Operação e Pareamento:** Inicialize a alimentação do circuito por meio da bateria de 7,2V. Abra o aplicativo **BlackBLE** em seu dispositivo iOS, realize o escaneamento físico e conecte-se ao módulo **HC-08**. Configure os botões gráficos para disparar os caracteres maiúsculos definidos para cada comando.
