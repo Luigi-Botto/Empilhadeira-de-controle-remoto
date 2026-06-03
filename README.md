@@ -12,7 +12,8 @@ Este repositório contém os arquivos de hardware, firmware e documentação té
 5. [Evolução do Design Mecânico e PCI](#-evolução-do-design-mecânico-e-pci)
 6. [Firmware e Protocolo de Comunicação](#-firmware-e-protocolo-de-comunicação)
 7. [Estrutura do Repositório](#-estrutura-do-repositório)
-8. [Como Executar o Projeto](#-como-executar-o-projeto)
+8. [Orçamento do Projeto](#-orçamento-do-projeto)
+9. [Como Executar o Projeto](#-como-executar-o-projeto)
 
 ---
 
@@ -100,12 +101,37 @@ Os dois LEDs de sinalização frontal (conectados às GPIOs 27 e 28) operam sob 
 
 ## 📁 Estrutura do Repositório
 
-
 * 📄 **`diagrama_blocos.png`**: Imagem esquemática detalhando a arquitetura interna e interconexão de blocos do circuito.
-* 📄 **`Design_PCI.png`**: .Desenho da placa para impressão
+* 📄 **`Design_PCI.png`**: Desenho da placa para impressão.
 * 📄 **`Esquematico_eletrico.png`**: Imagem esquemática do circuito no KiCad.
 * 📄 **`main.py`** *(ou arquivo de código equivalente)*: Código-fonte em MicroPython que roda diretamente no Raspberry Pi Pico.
 * 📄 **`README.md`**: Este arquivo de documentação técnica localizado na raiz do repositório.
 
 ---
 
+## 💰 Orçamento do Projeto
+
+Abaixo está a relação de custos dos componentes adquiridos para a montagem do protótipo:
+
+| Componente / Material | Quantidade | Custo Estimado (R$) |
+| :--- | :---: | :--- |
+| Raspberry Pi Pico | 1 | 30,00 |
+| Módulo Bluetooth HC-08 | 1 | 35,00 |
+| Kit de Baterias (Pilhas Lítio) | 1 | 50,00 |
+| Motores DC | 4 | 30,00 |
+| Conversor de Nível Lógico | 1 | 25,00 |
+| Ponte H L298N | 1 | 20,00 |
+| Módulo Step-Down LM2596 | 1 | 7,50 |
+| LEDs de Alto Brilho | 2 | 5,00 |
+| Resistores | 2 | 0,20 |
+| Placa de Circuito Impresso (PCI) | 1 | *Não determinado* |
+| Chassi em MDF (3mm) | 1 | *Não determinado* |
+| **Custo Total Parcial** | | **R$ 202,70** |
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. **Validação da Alimentação:** Antes de conectar as saídas às portas digitais do Pico, verifique com um multímetro se a saída do módulo Step-Down LM2596 está ajustada estritamente para **5V** para não danificar o microcontrolador.
+2. **Gravação do Firmware:** Abra a IDE Thonny, carregue o arquivo de código fonte, selecione o interpretador correto para o Raspberry Pi Pico e armazene o script diretamente na memória interna do dispositivo.
+3. **Operação e Pareamento:** Inicialize a alimentação do circuito por meio da bateria de 7,2V. Abra o aplicativo **BlackBLE** em seu dispositivo iOS, realize o escaneamento físico e conecte-se ao módulo **HC-08**. Configure os botões gráficos para disparar os caracteres maiúsculos definidos para cada comando.
