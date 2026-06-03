@@ -100,11 +100,10 @@ Os dois LEDs de sinalização frontal (conectados às GPIOs 27 e 28) operam sob 
 
 ## 📁 Estrutura do Repositório
 
-Os arquivos do projeto estão estruturados da seguinte forma no ambiente do GitHub:
 
-* 📂 **`[pasta-com-desenhos-e-esquematicos]`**: Diretório contendo os esquemáticos elétricos do circuito e os diagramas de layout da Placa de Circuito Impresso (PCI).
-* 📂 **`[pasta-com-pecas-para-impressao]`**: Diretório contendo os arquivos de modelagem digital das peças estruturais destinadas à manufatura por impressão 3D.
 * 📄 **`diagrama_blocos.png`**: Imagem esquemática detalhando a arquitetura interna e interconexão de blocos do circuito.
+* 📄 **`Design_PCI.png`**: .Desenho da placa para impressão
+* 📄 **`Esquematico_eletrico.png`**: Imagem esquemática do circuito no KiCad.
 * 📄 **`main.py`** *(ou arquivo de código equivalente)*: Código-fonte em MicroPython que roda diretamente no Raspberry Pi Pico.
 * 📄 **`README.md`**: Este arquivo de documentação técnica localizado na raiz do repositório.
 
