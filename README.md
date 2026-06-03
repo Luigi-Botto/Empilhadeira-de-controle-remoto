@@ -1,4 +1,7 @@
 # Carrinho de Controle Remoto BLE - Raspberry Pi Pico
+Luigi Lauand Botto - 23.01066-5
+Luigi de Menezes Collesi - 23.00625-0
+Enzo Pistori Fontenelle de Oliveira - 23.00768-5
 
 Este repositório contém os arquivos de hardware, firmware e documentação técnica para o desenvolvimento de um carrinho de controle remoto controlado via smartphone, projetado como parte da disciplina de Microcontroladores. O sistema utiliza o microcontrolador **Raspberry Pi Pico**, comunicação via **Bluetooth Low Energy (BLE)** e uma estrutura robusta montada sobre um chassi de **MDF** com placas de circuito impresso (PCI) customizadas.
 
